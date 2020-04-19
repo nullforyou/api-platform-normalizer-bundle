@@ -1,0 +1,30 @@
+{
+    "name": "loid/api-platform-normalizer-bundle",
+    "type": "symfony-bundle",
+    "description": "api平台自定义规范化器",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "loid",
+            "email": "jiang7552261@163.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "api-platform/core": "^2.1",
+        "symfony/serializer": "^4.3 || ^5.0"
+    },
+    "require-dev": {
+        "php": "^7.1.3"
+    },
+    "autoload":{
+        "psr-4": {
+            "Loid\\Bundle\\ApiPlatformNormalizerBundle\\": "src/"
+        }
+    },
+    "autoload-dev":{
+        "psr-4": {
+            "Loid\\Bundle\\ApiPlatformNormalizerBundle\\Tests\\": "tests/"
+        }
+    }
+}

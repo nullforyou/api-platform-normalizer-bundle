@@ -1,0 +1,8 @@
+services:
+    api.platform.hydra.normalizer.error:
+        class: Loid\Bundle\ApiplatformJsonldNormalizerBundle\Hydra\Serializer\ErrorNormalizer
+        arguments:
+            - '@api_platform.router'
+            - '%kernel.debug%'
+        tags:
+            - { name: serializer.normalizer, priority: -700 }
